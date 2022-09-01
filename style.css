@@ -3,15 +3,31 @@
     margin: 0;
     padding: 0;
 }
+.header_wapper .navbar{
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
 .navbar-brand{
     max-width: 120px;
     height:auto ;
+}
+.navbar-toggler{
+    border: 0;
+    line-height: 2;
+    color:aqua;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 .nav-item {
     margin: 0 10px;
 }
 .nav-item .nav-link{
     position: relative;
+    font-size: 16px;
+    font-weight: 500;
     margin-right: 10px;
     margin-left: 10px;
     color: rgb(255, 243, 73);
@@ -45,12 +61,12 @@
 .banner-wrapper{
     width: 100%;
     height:30px;
-    min-height: 1000px;
-    background-image: url('/portfolio/images/p3.jpg');
+    min-height: 650px;
+    background-image: url('/d:/portfolio/images/p3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size:auto;
-    background-attachment: fixed;
+    background-attachment:local;
     padding: 200px 0 100px 0
  }
 .header-scrolled{
@@ -72,8 +88,8 @@
     /*Background Color*/
     --primary-color: #FD4766;
     --secondary-color: #0e1525;
-    --bg-dark-blue : #0f52ee;
-    --bg-white: #fff;
+    --bg-dark-blue : #875ef7;
+    --bg-white: rgb(240, 172, 172);
     --gray-color:var(--gray-color);
     --gradient-color: linear-gradient(-224deg, var(--primary-color)0, #337DFF 100%);
     --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color)79.69%);
@@ -82,7 +98,7 @@
     --primary-font: 'Poppins', sans-serif;
     --primary-text: #FD4766;
     --text-white: #fff;
-    --text-gray: #2d4eeebf;
+    --text-gray: #ff3b8de3;
 
 }
 body{
@@ -219,7 +235,7 @@ button{
  .contact_wrapper textarea{
     background-color: transparent;
     background-color: var(--gray-color);
-    color: var(--text-gray);
+    color: var(--text-white);
     font-size: 15px;
     font-weight: 400;
     padding: 10px 20px;
@@ -229,10 +245,10 @@ button{
  .contact_wrapper .from-control:focus,
  .contact_wrapper textarea:focus{
     border-color: var(--primary-color);
-    color: var(--text-white);
+    color: var(--text-yellow);
  }
  .contact_wrapper .call_Details{
-    color:var(--text-gray);
+    color:var(--text-white);
  }
  .contact_wrapper .call_Details a{
     font-weight: 700;
