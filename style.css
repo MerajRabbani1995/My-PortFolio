@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.header_wapper .navbar{
+.header_wrapper .navbar{
     padding: 15px 0;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
